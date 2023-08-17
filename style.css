@@ -66,3 +66,10 @@ main {
     color: hsla(0, 0%, 100%, 60%);
     
 }
+
+.content-summary li {
+    list-style-type: none;
+    list-style-position: inside;
+    height: 50px;
+    background-color: gray;
+}
