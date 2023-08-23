@@ -67,9 +67,14 @@ main {
     
 }
 
+.content-summary ul {
+    padding: 0;
+}
+
 .content-summary li {
     list-style-type: none;
     list-style-position: inside;
     height: 50px;
     background-color: gray;
 }
+
