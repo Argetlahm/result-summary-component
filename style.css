@@ -67,14 +67,39 @@ main {
     
 }
 
+.content-summary h2 {
+    text-align: left;
+    font-size: 18px; 
+}
+
 .content-summary ul {
     padding: 0;
 }
 
 .content-summary li {
+    --rad: 5px;
     list-style-type: none;
     list-style-position: inside;
     height: 50px;
-    background-color: gray;
+    width: 85%;
+    display: flex;
+    margin: 20px auto;
+    border-radius: var(--rad);
+}
+
+li.reaction {
+    background-color: hsla(0, 100%, 67%, 10%);
+}
+
+li.memory {
+    background-color: hsla(39, 100%, 56%, 10%);
+}
+
+li.verbal {
+    background-color: hsla(166, 100%, 37%, 10%);
+}
+
+li.visual {
+    background-color: hsla(234, 85%, 45%, 10%);
 }
 
