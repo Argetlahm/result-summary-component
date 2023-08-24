@@ -70,6 +70,8 @@ main {
 .content-summary h2 {
     text-align: left;
     font-size: 18px; 
+    margin: 25px 30px;
+    color: rgba(0, 0, 0, 70%);
 }
 
 .content-summary ul {
@@ -85,21 +87,26 @@ main {
     display: flex;
     margin: 20px auto;
     border-radius: var(--rad);
+    align-items: center;
 }
 
 li.reaction {
     background-color: hsla(0, 100%, 67%, 10%);
+    color: hsla(0, 100%, 67%, 80%);
 }
 
 li.memory {
     background-color: hsla(39, 100%, 56%, 10%);
+    color: hsla(39, 100%, 56%, 80%);
 }
 
 li.verbal {
     background-color: hsla(166, 100%, 37%, 10%);
+    color: hsla(166, 100%, 37%, 80%);
 }
 
 li.visual {
     background-color: hsla(234, 85%, 45%, 10%);
+    color: hsla(234, 85%, 45%, 80%);
 }
 
