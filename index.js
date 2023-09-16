@@ -4,15 +4,29 @@ var arrData = [];
 function fetchData(url) {
     fetch(url)
         .then((response) => response.json())
-        .then((json) => arrData.push(json))
+        .then((data) => {
+            arrData = data
+            // console.log(arrData[1].category)
+            updateData()
+        })
 }
 
 fetchData("./data.json")
 // console.log(arrData)
 
-const scoreElem = document.getElementsByClassName("summary-title")
-for (let i = 0; i < scoreElem.length; i++) {
-    const element = scoreElem[i];
-    // scoreElem[i].innerHTML = arrData.data[0].category
-    console.log(arrData)
+
+
+function updateData() {
+    const scoreElem = document.getElementsByClassName("summary-title")
+    const scoreValue = document.getElementsByClassName("summary-score")
+    const scoreIcon = document.getElementsByClassName("summary-icon")
+    for (let i = 0; i < scoreElem.length; i++) {
+        const element = scoreElem[i];
+        // console.log(arrData[i].category)
+        scoreElem[i].innerHTML = arrData[i].category
+        scoreValue[i].innerHTML = arrData[i].score + "/100"
+        scoreIcon[i].setAttribute("src", arrData[i].icon)
+        // console.log(arrData)
+    }
 }
+
