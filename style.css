@@ -88,25 +88,51 @@ main {
     margin: 20px auto;
     border-radius: var(--rad);
     align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.summary-icon, .summary-title, .summary-score {
+    position: relative;
+    font-weight: 700;
+}
+
+.summary-icon{
+    left: 20px;
+}
+
+.summary-title {
+    left: 30px;
+    flex-grow: 2;
+}
+
+.summary-score {
+    right: 20px;
+    color: rgba(0, 0, 0, 70%);
+    
+}
+
+.total-score{
+    color: hsla(0, 0%, 100%, 60%);
 }
 
 li.reaction {
-    background-color: hsla(0, 100%, 67%, 10%);
+    background-color: hsla(0, 100%, 67%, 5%);
     color: hsla(0, 100%, 67%, 80%);
 }
 
 li.memory {
-    background-color: hsla(39, 100%, 56%, 10%);
+    background-color: hsla(39, 100%, 56%, 5%);
     color: hsla(39, 100%, 56%, 80%);
 }
 
 li.verbal {
-    background-color: hsla(166, 100%, 37%, 10%);
+    background-color: hsla(166, 100%, 37%, 5%);
     color: hsla(166, 100%, 37%, 80%);
 }
 
 li.visual {
-    background-color: hsla(234, 85%, 45%, 10%);
+    background-color: hsla(234, 85%, 45%, 5%);
     color: hsla(234, 85%, 45%, 80%);
 }
 

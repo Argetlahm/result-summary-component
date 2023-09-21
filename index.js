@@ -24,7 +24,7 @@ function updateData() {
         const element = scoreElem[i];
         // console.log(arrData[i].category)
         scoreElem[i].innerHTML = arrData[i].category
-        scoreValue[i].innerHTML = arrData[i].score + "/100"
+        scoreValue[i].innerHTML = arrData[i].score + " / 100"
         scoreIcon[i].setAttribute("src", arrData[i].icon)
         // console.log(arrData)
     }
