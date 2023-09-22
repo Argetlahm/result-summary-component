@@ -112,8 +112,9 @@ main {
     
 }
 
-.total-score{
-    color: hsla(0, 0%, 100%, 60%);
+.total-score {
+    color: hsla(0, 0%, 40%, 60%);
+    font-weight: 700;
 }
 
 li.reaction {
