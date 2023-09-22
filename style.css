@@ -137,3 +137,7 @@ li.visual {
     color: hsla(234, 85%, 45%, 80%);
 }
 
+button.btn {
+    background-color: aliceblue;
+}
+
