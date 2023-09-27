@@ -153,12 +153,17 @@ button.btn {
 
     body {
         width: 100%;
+        
     }
 
     main {
         display: flex;
+        height: 100vh;
+        /* align-content: center; */
         align-items: center;
+        /* flex-wrap: wrap; */
         justify-content: center;
+        
     }
 
     .content-header, .content-summary {
