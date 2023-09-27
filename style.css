@@ -175,10 +175,26 @@ button.btn {
         --rad: 7%;
         border-top-right-radius: var(--rad);
         border-top-left-radius: var(--rad);
-       /* justify-content: center; */
+       justify-content: space-evenly;
     }
 
+    .header-score {
+        --dimension: 175px;
+        width: var(--dimension);
+        height: var(--dimension);
 
-    
+    }
+
+    .header-score h2 {
+        margin-top: 40px;
+    }
+
+    .content-header {
+        padding: 20px 0;
+    }
+
+    .content-summary {
+        box-shadow: 10px 10px 10px -10px hsl(224, 30%, 27%);
+    }
 }
 
