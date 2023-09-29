@@ -151,6 +151,10 @@ button.btn {
 
 @media only screen and (min-width: 768px) {
 
+    :root {
+        --color: hsl(224, 30%, 27%);
+    }
+
     body {
         width: 100%;
         
@@ -169,6 +173,7 @@ button.btn {
     .content-header, .content-summary {
         width: 300px;
         height: 400px;
+        /* padding: 20px 0; */
     }
 
     .content-header {
@@ -176,6 +181,20 @@ button.btn {
         border-top-right-radius: var(--rad);
         border-top-left-radius: var(--rad);
        justify-content: space-evenly;
+       box-shadow: 0px 15px 20px -17px var(--color);
+    }
+
+    .content-summary {
+        --rad: 7%;
+        --padqty: 20px;
+        box-shadow: 10px 10px 20px -20px var(--color), -10px 10px 20px -20px var(--color);
+        border-top-right-radius: var(--rad);
+        border-bottom-right-radius: var(--rad);
+        padding: 20px 0;
+        padding-left: var(--padqty);
+        position: relative;
+        right: var(--padqty);
+        z-index: -1;
     }
 
     .header-score {
@@ -193,8 +212,6 @@ button.btn {
         padding: 20px 0;
     }
 
-    .content-summary {
-        box-shadow: 10px 10px 10px -10px hsl(224, 30%, 27%);
-    }
+    
 }
 
