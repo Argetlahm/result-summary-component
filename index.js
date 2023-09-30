@@ -31,7 +31,8 @@ function updateData() {
         scoreTotal.innerHTML = " / 100"
         scoreValue[i].appendChild(scoreTotal)
         scoreIcon[i].setAttribute("src", arrData[i].icon)
-        console.log(scoreTotal)
+        scoreIcon[i].setAttribute("alt", "icon")
+        // console.log(scoreTotal)
     }
     
 }

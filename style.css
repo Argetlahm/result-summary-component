@@ -149,6 +149,10 @@ button.btn {
     
 }
 
+button.btn:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+
 @media only screen and (min-width: 768px) {
 
     :root {
@@ -187,7 +191,7 @@ button.btn {
     .content-summary {
         --rad: 7%;
         --padqty: 20px;
-        box-shadow: 10px 10px 20px -20px var(--color), -10px 10px 20px -20px var(--color);
+        box-shadow: 10px 10px 25px -23px var(--color), -10px 10px 25px -23px var(--color);
         border-top-right-radius: var(--rad);
         border-bottom-right-radius: var(--rad);
         padding: 20px 0;
@@ -212,6 +216,7 @@ button.btn {
         padding: 20px 0;
     }
 
+    
     
 }
 
